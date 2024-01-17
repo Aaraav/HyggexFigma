@@ -1,23 +1,20 @@
-import logo from './logo.svg';
 import './App.css';
+import Navbar from './Components/Navbar';
+import Hyggex from './Components/Hyggex';
+import Calculation from './Components/Calculation';
+import Footer from './Components/Footer';
+import Faq from './Components/Faq';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+     <Navbar/>
+     <Hyggex/>
+     <Calculation value='9 + 6 + 7x - 2x - 3'/>
+<Footer/>
+<Faq/>
+
+
     </div>
   );
 }
